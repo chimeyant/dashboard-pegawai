@@ -243,7 +243,6 @@ export default {
     const device = computed(() => store.device);
     const theme = computed(() => store.theme);
     const appinfo: any = ref({});
-    const menus = ref([]);
     const drawer = ref(true);
     const loading = ref(0);
     const interval = ref();
@@ -253,6 +252,19 @@ export default {
     const user: any = computed(() => store.user);
     const page = computed(() => store.page);
     const form = computed(() => store.form);
+
+    const menus = ref([
+      {
+        title: "Dashboard",
+        props: {
+          type: "item",
+          icon: "mdi-view-dashboard",
+          route: "/dashboard",
+          submenus: null,
+        },
+        route: "/dashboard",
+      },
+    ]);
 
     const fetchData = async () => {
       await store.fetchAppInfo();
@@ -264,10 +276,7 @@ export default {
       store.getUserInfo();
     };
 
-    const fetchMenus = async () => {
-      await store.fetchMenus();
-      menus.value = store.menus;
-    };
+    const fetchMenus = async () => {};
 
     const onDrawer = () => {
       if (drawer.value) {
