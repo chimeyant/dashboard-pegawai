@@ -25,7 +25,7 @@
         <simple-card
           title="Jumlah Pegawai Laki-Laki"
           icon="mdi-account-tie"
-          count="36"
+          count="5.356"
           chip-title="30%"
           chip-icon="mdi-arrow-down-bold-circle-outline"
         />
@@ -38,7 +38,7 @@
         <simple-card
           title="Jumlah Pegawai Perempuan"
           icon="mdi-account-tie"
-          count="36"
+          count="5.070"
           chip-title="30%"
           chip-icon="mdi-arrow-down-bold-circle-outline"
         />
@@ -52,7 +52,7 @@
         <simple-card
           title="Total Pegawai"
           icon="mdi-account-group"
-          count="36"
+          count="10.426"
           chip-title="30%"
           chip-icon="mdi-arrow-down-bold-circle-outline"
         />
